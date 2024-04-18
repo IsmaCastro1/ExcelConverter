@@ -20,3 +20,14 @@ function SaveBase64() {
       link.click();
     } catch (error) {}
   }
+
+function checkInput() {
+    const input = document.getElementById("textInput");
+    const button = document.getElementById("save");
+
+    if (input.value.trim() !== "") {
+      button.removeAttribute("disabled");
+    } else {
+      button.setAttribute("disabled", "true");
+    }
+  }

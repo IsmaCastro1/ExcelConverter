@@ -12,9 +12,9 @@
     <div id="container">
       <div id="box">
         <h2 for="base64Input" style="color: white;">Base64 to Excel</h2>
-        <input id="textInput" type="text" id="base64Input" />
+        <input id="textInput" type="text" id="base64Input" oninput="checkInput()" />
         <br>
-        <button id="save" onclick="SaveBase64()">Save</button>
+        <button id="save" onclick="SaveBase64()" disabled>Save</button>
       </div>
     </div>
 
